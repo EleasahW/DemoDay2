@@ -5,9 +5,15 @@
     font-family: yahoo-sans, Helvetica, sans-serif;
 }
 
-a:link {
+a:link,
+a:hover i,
+a i,
+.white,
+.white:hover {
     color: white;
+    text-decoration: none;
 }
+
 
 .top-nav {
     display: flex;
@@ -62,6 +68,14 @@ a:link {
     align-items: center;
 }
 
+.search-button:hover,
+.search-button:visited,
+.search-button:active,
+.search-button:enabled {
+    color: white;
+    text-decoration: none;
+}
+
 .smaller {
     zoom: 70%;
 }
@@ -95,13 +109,151 @@ a:link {
     padding-right: 20px;
 }
 
+
+#teams-and-scores {
+    width: 100vw;
+    height: 100px;
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+
+#trending {
+    width: 145px;
+    height: 100%;
+    border-right: 1px solid #ccc;
+}
+
+.sport-category {
+    width: 42px;
+    height: 100%;
+    border-right: 1px solid #ccc;
+}
+
+.info-box {
+    width: 150px;
+    height: 100%;
+    border-right: 1px solid #ccc;
+}
+
+.game-score {
+    width: 117px;
+    height: 84px;
+    margin: 8px 16px;
+    background-color: #bbb;
+    color: #1D2228;
+    font-size: 14px;
+}
+
 .advert  {
+    width: 93vw;
+    height: 150px;
+    background-color: #ddd;
+    margin: 20px;
+}
+.close-box {
+    width: 85px;
+    height: 22px;
+    background-color: #bbb;
+    float: right;
+    border-bottom-left-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+/* how to accomplish this?
+.close-box:active {
+    .advert, .close-box {
+        display: none;
+    }
+}
+*/
+
+#below-ad {
+    margin: 20px;
 
 }
 
-.content {
-    margin: 20px;
+#left-content {
 
+}
+
+#breaking-news {
+    width: 880px;
+    height: 72px;
+    background-color: hsl(0, 25%, 75%);
+    border-radius: 10px;
+    margin-bottom: 9px;
+    box-shadow: 0 4px 6px hsl(0, 0%, 50%);
+    display: flex;
+}
+
+.eye-grab {
+    width: 175px;
+    height: 100%;
+    padding-left: 25px;
+    border-right: 1px solid hsl(0, 45%, 65%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #c44;
+    color: white;
+    font-family: arial;
+    font-size: 14px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+}
+
+.small-image {
+    width: 125px;
+}
+
+.headline {
+    height: 100%;
+    padding-left: 15px;
+    border-left: 1px solid hsl(0, 35%, 65%);
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+}
+
+#main-story {
+
+}
+
+.photo-container {
+    width: 880px;
+    height: 450px;
+    background-color: #aaa;
+    display: flex;
+}
+
+.primary-photo {
+    width: 400px;  /* actual 680px? */
+    height: 100%;
+    border-right: 1px solid white;
+}
+
+.photo-trio {
+    width: 400px;  /* whatever's left from 880 */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-trio-item {
+    height: 150px;
+    border-left: 1px solid white;
+    border-bottom: 2px solid white;
+}
+
+.photo-trio-item:last-of-type {
+    border-bottom: none;
+}
+
+
+
+.scrolling {
+    margin: 20px 0;
 }
 
 /* Mobile Styles */
