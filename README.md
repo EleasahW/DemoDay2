@@ -1,7 +1,5 @@
 # DemoDay2
 ### @TODO: Eleasah
-- Push main branch to feat/eleasah
-- input top navigation for index.html, index.css
 - Create outline for index.css
 - Create outline for news.yahoo.html
 - Create outline for news.yahoo.css
