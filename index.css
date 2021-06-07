@@ -1,3 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: yahoo-sans, Helvica, sans-serif;
+}
+
+/**navigation*/
+.top-nav{
+    display: flex;
+    width: 100%;
+    height: 22px;
+    background-color: #2d1152;
+    font-size: 10px;
+    /**Casey - font-size: 10pt*/
+    align-items: center;
+}
+
+.top-nav a{
+    display: flex;
+    padding: 1px 21px 0 10px;
+    color: white;
+}
+.top-nav a:hover{
+    color: white;
+    text-decoration: underline;
+    /**change text underline color?*/
+}
+
+.top-nav a:focus{
+    color: white;
+    text-decoration: none;
+}
+
+.icon-home:hover{
+    text-decoration: none;
+}
+
+/**end*/
+
 header{
     /**inline element*/
     display: inline;
