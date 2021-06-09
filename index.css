@@ -103,13 +103,21 @@ input[type=submit]{
     background-color: #188FFF;
     border-color: #188FFF;
     border-bottom-color: #188FFF;
-    width: 250px;
+    width: 300px;
     height: 40px;
     font-weight: bold;
     margin-right: 15px;
     margin-bottom: 20px;
 }
-
+/**ad*/
+.ad input{
+    width: 80px;
+    height: 20px;
+    border-radius: 5px;
+    border: 20px;
+    margin-left: 90%;
+    margin-bottom: 20px;
+}
 /**Body**/
 .focus{
     display: flex;
@@ -122,7 +130,8 @@ input[type=submit]{
 .center{
     display: flex;
     flex-direction: column;
-    margin-right: 25px;
+    margin-right: 10px;
+    padding-right: 10px;
     background-color: hsl(219,14%,72%);
     background-blend-mode: color;
     border-radius: 0px 10px 10px 0px;
@@ -131,17 +140,29 @@ input[type=submit]{
 .center h3{
     font-size: 20px;
     margin-left: 25px;
+    margin-top: 30px;
     background-color: hsl(219,14%,72%);
+    line-height: 26px;
 }
 
 .center p{
-    margin-top: 5px;
+    margin-top: 10px;
     margin-left: 25px;
     font-size: 12px;
-    background-color: hsl(219,14%,72%);;
+    background-color: hsl(219,14%,72%);
+    line-height: 17.2px;
 }
-.center a{
-    background-color: ;
+
+.center div:last-child p{
+    background-color: hsl(219,14%,72%);
+    font-size: 12px;
+    line-height: 15.6px;
+}
+
+.center a:hover{
+    text-decoration: underline;
+    text-decoration-color: hsl(267,99%,41%);
+    
 }
 
 .Trending{
@@ -158,16 +179,25 @@ input[type=submit]{
 .Trending span{
     display: flex;
     flex-direction: column;
+    align-items: normal;
+    padding-top: 20px;
+    padding-left: 10px;
 }
 
 .Trending li{
     color: hsl(267,99%,41%);
+    padding-bottom: 15px;
 }
 
 .Trending h2{
     font-size: 18px;
-    color:hsl(227,12%,71%)
+    color:hsl(227,12%,71%);
+    display: flex;
+    flex-direction: row;
+    padding-right: 20px;
 }
+
+
 .focus a:hover{
     color:hsl(267,99%,41%);
     text-decoration: none;
@@ -183,11 +213,11 @@ input[type=submit]{
     display: flex;
     flex-direction: column;
     margin-top: 15px;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 .secondary-main img{
     width: 175px;
-    height: 70px;
+    height: 90px;
     border-radius: 5px;
 }
 
