@@ -2,8 +2,151 @@
     padding: 0px;
     margin: 0px;
     font-family: yahoo-sans, Helvica, sans-serif;
+    text-decoration: none;
+    background-color: hsl(0,0%,100%);
 }
-.class
+body{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+a{
+    color: hsl(210,17%,16%);
+    background-color: none;
+}
+
+h1 a{
+    color: hsl(267,99%,41%);
+
+}
+h1 a:hover{
+    text-decoration: none;
+}
+.head > input{
+    border-color: hsl(209,100%,55%);
+    border-width: 20px;
+}
+
+.head > input:click{
+    border-color: hsl(209,100%,55%);
+    border-width: 20px;
+    box-shadow: 5px #188FFF;
+}
+
+.head{
+    color: hsl(210,17%,16%);
+    text-underline: none;
+}
+span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+span img{
+    width: 180px;
+    height: 50px;
+    padding-right: 50px;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.head a:hover{
+    color:hsl(267,99%,41%);
+    text-decoration: underline 5px;
+    text-decoration-color: hsl(267,99%,41%);
+    animation: ;
+    animation-direction: normal;
+}
+
+form input{
+    width: 600px;
+    height: 40px;
+    border-radius: 5px 0px 0px 5px;
+    border-color: hsl(209,100%,55%);
+    border-top-color: hsl(209,100%,55%);
+    border-width: 1px;
+}
+
+nav{
+    font-weight: bold;
+    align-items: center;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+}
+nav a{
+    padding: 25px
+}
+
+input[type=submit]{
+    border-radius: 30px;
+    color: hsl(0,0%,100%);
+    background-color: #188FFF;
+    border-color: #188FFF;
+    border-bottom-color: #188FFF;
+    width: 250px;
+    height: 40px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+/**Body**/
+.focus{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+.focus img{
+    border-radius: 10px 0px 0px 10px;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+    background-color: hsl(219,14%,72%);
+    background-blend-mode: color;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.center h3{
+    font-size: 20px;
+    margin-left: 25px;
+    background-color: hsl(219,14%,72%);
+}
+
+.center p{
+    margin-top: 5px;
+    margin-left: 25px;
+    font-size: 12px;
+    background-color: hsl(219,14%,72%);;
+}
+.center a{
+    background-color: ;
+}
+
+.Trending{
+    margin-left: 15px;
+    align-items: center;
+}
+
+.Trending h2{
+    font-size: 18px;
+    color:hsl(227,12%,71%)
+}
+.focus a:hover{
+    color:hsl(267,99%,41%);
+    text-decoration: none;
+}
+
+.trending{
+
+}
+
+
 
 
 
@@ -38,17 +181,3 @@
 .icon-home:hover{
     text-decoration: none;
 }*/
-
-header{
-    /**inline element*/
-    display: inline;
-}
-
-header > h1 {
-    /**font:Yahoo*/
-
-}
-nav{
-
-
-}
