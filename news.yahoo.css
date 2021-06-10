@@ -50,13 +50,15 @@ a{
 /**hero*/
 .nav{
     margin-bottom: 30px;
+    margin-top: -10px;
 }
 
 .nav img{
     width: 90px;
     height: 35px;
+    margin-right: 100px;
     padding-top: 20px;
-    padding-right: 30px;
+
 }
 
 .nav input[type=search]{
@@ -66,6 +68,7 @@ a{
     height: 35px;
     width: 300px;
     line-height: 20px;
+    align-items: last;
 }
 
 .nav #search-news{
@@ -91,8 +94,8 @@ a{
 .nav #sign-in{
     border-radius: 5px;
     background-color: inherit;
-    color: #2d1152;
-    border-color: #2d1152;
+    color: hsl(267,100%,28%);
+    border-color: hsl(267,100%,28%);
     height: 30px;
     width: 90px;
     font-weight: bold;
@@ -102,6 +105,7 @@ a{
     background-color: #2d1152;
     color: hsl(0,0%,100%);
 }
+
 
 /**.nav input [type=submit]{
     background-color: hsl(233,41%,36%);
@@ -116,6 +120,9 @@ a{
 /**navigation*/
 nav{
     font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
 }
 
 nav:hover a{
@@ -134,12 +141,28 @@ nav a:hover{
     /**space between txt decoration & text*/
 }
 
+nav a strong{
+    color: hsl(0,0%,0%);
+    text-decoration: underline 4px;
+    text-decoration-color: hsl(212,100%,50%);
+}
+
 /**nav a div:first-child{
     color: hsl(0,0%,0%);
     text-decoration: underline 4px;
     text-decoration-color:  hsl(212,100%,50%);
 }
  */
+
+/**ad*/
+.ad input{
+    width: 80px;
+    height: 20px;
+    border-radius: 5px;
+    border: 20px;
+    margin-left: 93.5%;
+    margin-bottom: 40px;
+}
 
 /**main*/
 .central{
@@ -194,15 +217,22 @@ nav a:hover{
 
 .main-text a:hover{
     text-decoration: underline;
+    color: sl(0,0%,100%);
 }
 
 /**right-hand graphic*/
+#bkg img{
+    height: 75px;
+    width: 290px;
+    margin-bottom: 0px;
+}
 
-.right-figure{
+#right-text{
     display: flex;
     flex-direction: column;
     background-color: hsl(0,0%,97%);
     padding: 20px;
+    width: 250px;
 }
 
 .right-figure a:hover{
@@ -219,8 +249,8 @@ nav a:hover{
     font-size: 12px;
     line-height: 28px;
     font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     margin-left: 70px;
 }
 
@@ -239,7 +269,6 @@ nav a:hover{
     border-radius: 100%;
     opacity: 0.4;
     margin-right: 5px;
-
 }
 
 .icons img[alt=MSNBC]{
@@ -267,12 +296,10 @@ nav a:hover{
     color: hsl(212,100%,50%);
     text-decoration: underline;
     text-decoration-color: hsl(212,100%,50%);
-
 }
 
-
 .secondary-main img{
-    width: 175px;
+    width: 170px;
     height: 90px;
     border-radius: 2px;
 }
