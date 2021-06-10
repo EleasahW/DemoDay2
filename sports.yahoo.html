@@ -9,94 +9,153 @@
     <link rel="stylesheet" href="sports.yahoo.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 
 <body>
 
-    <div class="top-nav">
-        <a class="white" href="https://www.yahoo.com"><i class="material-icons smaller">home</i>&nbsp;Home</a>
-        <a href="https://mail.yahoo.com">Mail</a>
-        <a href="https://news.yahoo.com">News</a>
-        <a href="#">Finance</a>
-        <a href="https://sports.yahoo.com">Sports</a>
-        <a href="#">Entertainment</a>
-        <a href="#">Search</a>
-        <a href="#">Mobile</a>
-        <a href="#">More</a>
-        <a href="#">Join a Daily Fantasy contest today!</a>
+    <div class="purple-nav">
+        <div class="links">
+            <i class="material-icons smaller go-home">home</i>
+            <a href="https://www.yahoo.com">Home</a>
+            <a href="https://mail.yahoo.com">Mail</a>
+            <a href="https://news.yahoo.com">News</a>
+            <a href="#">Finance</a>
+            <a href="https://sports.yahoo.com">Sports</a>
+            <a href="#">Entertainment</a>
+            <a href="#">Search</a>
+            <a href="#">Mobile</a>
+            <a href="#">More</a>
+        </div>
+        <a class="bonus" href="https://sports.yahoo.com/dailyfantasy/">Join a Daily Fantasy contest today! &nbsp;<span style="font-size: 8px; margin-top:6px">&#10095;&#10095;</span></a>
     </div>
 
     <div class="search-bar">
-        <div class="logo-laptop"><img src="yahoo-sports-laptop.jpg" alt="logo"/></div>
-        <div id="field-and-button">
+        <div><img src="images/yahoo-sports-logo.jpg" height="42px" alt="logo"/></div>
+        <div class="field-and-button">
             <input type="text" name="search" class="search-field" placeholder="Search Players and Teams">
             <a class="search-button" href="#"><i class="material-icons larger">search</i></a>
         </div>
-        <div id="search-and-account">
-            <a href="#"><i class="material-icons">search</i></a>
-            <a href="#"><i class="glyphicon glyphicon-user"></i></a>
+        <div class="signin-mail">
+            <button class="sign-in">Sign in</button>
+            <a class="no-underline center-y" href="https://mail.yahoo.com/"><i class="material-icons">mail</i>&nbsp;Mail</a>
         </div>
     </div>
 
     <div class="second-nav">
-        <a href="www.yahoo.com">Home</a>
-        <a href="#">Fantasy</a>
-        <a href="#">NFL</a>
-        <a href="#">NBA</a>
-        <a href="#">MLB</a>
-        <a href="#">NHL</a>
-        <a href="#">NCAAF</a>
-        <a href="#">Soccer</a>
-        <a href="#">Golf</a>
-        <a href="#">Sportsbook</a>
-        <a href="#">MMA</a>
-        <a href="#">WNBA</a>
-        <a href="#">Rivals</a>
-        <a href="#">Videos</a>
-        <a href="#">Podcasts</a>
-        <a href="#">NASCAR</a>
-        <a href="#">NCAAB</a>
-        <a href="#">NCAAW</a>
-        <a href="#">Tennis</a>
-        <a href="#">Boxing</a>
-        <a href="#">Cricket</a>
-        <a href="#">Indycar</a>
-        <a href="#">Motorsports</a>
-        <a href="#">Horse Racing</a>
-        <a href="#">Cycling</a>
-        <a href="#">Shop BreakingT Shirts</a>
-        <a href="#">Shop Team Gear</a>
-        <a href="#">Help</a>
-        <a href="#">Jobs</a>
-        <a href="#">RSS</a>
-        <a href="#">PlayAR</a>
-        <a href="#">Trivia</a>
-        <a href="#">GameChannel</a>
-        <a href="#">First and Black</a>
+        <div class="categories">
+            <a href="https://www.yahoo.com">SportsHome</a>
+            <a href="#">Fantasy</a>
+            <a href="#">NFL</a>
+            <a href="#">NBA</a>
+            <a href="#">MLB</a>
+            <a href="#">NHL</a>
+            <a href="#">NCAAF</a>
+            <a href="#">Soccer</a>
+            <a href="#">Golf</a>
+            <a href="#">Sportsbook</a>
+            <a href="#">MMA</a>
+            <a href="#">...</a>
+            <div class="remaining-cats">
+                <a href="#">WNBA</a>
+                <a href="#">Rivals</a>
+                <a href="#">Videos</a>
+                <a href="#">Podcasts</a>
+                <a href="#">NASCAR</a>
+                <a href="#">NCAAB</a>
+                <a href="#">NCAAW</a>
+                <a href="#">Tennis</a>
+                <a href="#">Boxing</a>
+                <a href="#">Cricket</a>
+                <a href="#">Indycar</a>
+                <a href="#">Motorsports</a>
+                <a href="#">Horse Racing</a>
+                <a href="#">Cycling</a>
+                <a href="#">Shop BreakingT Shirts</a>
+                <a href="#">Shop Team Gear</a>
+                <a href="#">Help</a>
+                <a href="#">Jobs</a>
+                <a href="#">RSS</a>
+                <a href="#">PlayAR</a>
+                <a href="#">Trivia</a>
+                <a href="#">GameChannel</a>
+                <a href="#">First and Black</a>
+            </div>
+        </div>
+        <div class="my-teams">
+            <div class="team-logo"><img src="images/pats.svg" height="28px" alt="patriots logo"></div>
+            <div class="team-logo"><img src="images/celtics.svg" height="31px" alt="celtics logo"></div>
+            <div class="team-logo"><img src="images/redsox.svg" height="30px" alt="red sox logo"></div>
+            <div class="team-logo"><img src="images/bruins.svg" height="30px" alt="bruins logo"></div>
+            <a href="#">+<br>EDIT</a>
+        </div>
     </div>
 
     <div id="teams-and-scores">
-        <div id="trending">Trending &#9662;</div>
-        <div class="sport-category">nba</div>
+        <div id="trending">Trending<i class="glyphicon glyphicon-menu-down" style="color:red; font-size: 11px"></i></div>
+
+        <div class="sport-icon"><i class='fas fa-baseball-ball' style='font-size:20px'></i>MLB</div>
         <a class="info-box" href="#">
-            <div class="game-score">(i) inning or date&time<br>icon.(scr)team1</br>icon.(scr)team2</div>
+            <div class="game-score">
+                <div class="current-or-next inn-qtr">Mid 2</div>
+                <div class="team"><span>T HOU</span> <span>1</span></div>
+                <div class="team"><span>T BOS</span> <span>2</span></div>
+            </div>
         </a>
+
         <a class="info-box" href="#">
-            <div class="game-score">(i) inning or date&time<br>icon.(scr)team1</br>icon.(scr)team2</div>
+            <div class="game-score">
+                <div class="current-or-next inn-qtr">Bot 1</div>
+                <div class="team"><span>T WAS</span> <span>2</span></div>
+                <div class="team"><span>T TB</span> <span>3</span></div>
+            </div>
         </a>
+
         <a class="info-box" href="#">
-            <div class="game-score">(i) inning or date&time<br>icon.(scr)team1</br>icon.(scr)team2</div>
+            <div class="game-score">
+                <div class="current-or-next inn-qtr">Bot 2</div>
+                <div class="team"><span>T MIL</span> <span>1</span></div>
+                <div class="team"><span>T CIN</span> <span>2</span></div>
+            </div>
         </a>
-        <div class="sport-category">mlb</div>
+
         <a class="info-box" href="#">
-            <div class="game-score">(i) inning or date&time<br>icon.(scr)team1</br>icon.(scr)team2</div>
+            <div class="game-score">
+                <div class="current-or-next inn-qtr">Top 2</div>
+                <div class="team"><span>T ATL</span> <span>0</span></div>
+                <div class="team"><span>T PHI</span> <span>1</span></div>
+            </div>
         </a>
+
         <a class="info-box" href="#">
-            <div class="game-score">(i) inning or date&time<br>icon.(scr)team1</br>icon.(scr)team2</div>
+            <div class="game-score">
+                <div class="current-or-next inn-qtr">End 2</div>
+                <div class="team"><span>T NYM</span> <span>2</span></div>
+                <div class="team"><span>T BAL</span> <span>1</span></div>
+            </div>
         </a>
+
         <a class="info-box" href="#">
-            <div class="game-score">(i) inning or date&time<br>icon.(scr)team1</br>icon.(scr)team2</div>
+            <div class="game-score">
+                <div class="current-or-next inn-qtr">Bot 2</div>
+                <div class="team"><span>T SEA</span> <span>0</span></div>
+                <div class="team"><span>T DET</span> <span>0</span></div>
+            </div>
         </a>
+
+        <div class="sport-icon"><i class='fas fa-basketball-ball' style='font-size:20px'></i>NBA</div>
+        <a class="info-box" href="#">
+            <div class="game-score">
+                <div class="current-or-next game-time">Sun 6:30 PM</div>
+                <div class="team"><span>T (3) DEN</span> <span>0-1</span></div>
+                <div class="team"><span>T (4) PHO</span> <span>1-0</span></div>
+            </div>
+        </a>
+
+        <div class="scroll-arrows">
+            <div class="scroll-button">&gt;</div>
+            <div class="scroll-button">&lt;</div>
+        </div>
     </div>
 
     <div class="advert">
@@ -106,33 +165,83 @@
 
     <div id="below-ad">
         <div id="left-content">
-            <div id="breaking-news">
-                <div class="eye-grab">BREAKING<br>NEWS</div>
-                <img class="small-image" src="#" alt="player's face">
-                <div class="headline">Your home team trades your favorite player</div>
+            <div id="this-just-in">
+                <div class="side-heading breaking-news">BREAKING<br>NEWS</div>
+                <img class="small-image" src="images/coach-talks.jpg" width="100%" alt="player's face">
+                <div class="headline">Your home team trades your favorite player...<em>again</em>.</div>
             </div>
 
             <div id="main-story">
                 <div class="photo-container">
                     <a class="primary-photo" href="#">
-                        <img src="story-photo.jpg" alt="photo of player"/>
+                        <img src="images/hawks-doing-well.jpg" width="100%" alt="photo of player"/>
                     </a>
                     <div class="photo-trio">
-                        <a class="photo-trio-item" href="#"><img src="#" alt="small photo1"></a>
-                        <a class="photo-trio-item" href="#"><img src="#" alt="small photo2"></a>
-                        <a class="photo-trio-item" href="#"><img src="#" alt="small photo3"></a>
+                        <a class="photo-trio-item" href="#"><img src="images/umpire.jpg" width="100%" alt="small photo1"></a>
+                        <a class="photo-trio-item" href="#"><img src="images/referee.jpg" width="100%" alt="small photo2"></a>
+                        <a class="photo-trio-item" href="#"><img src="images/that-arm-position-tho.jpg" width="100%" alt="small photo3"></a>
                     </div>
                 </div>
 
             </div>
 
-            <div class="scrolling">
-                SCROLLABLE PHOTO-LINKS HERE
+            <div id="scrolling-quotes">
+                <div class="side-heading line-up">THE<br>
+                    <div class="yahoo-orange">LINE<br>UP</div>
+                </div>
+                <div class="critic-pic"><img src="images/vincent.webp" width="121px"></div>
+                <div class="what-they-said">
+                    <div class="quote">Without James Harden, the Nets looked comfortable being uncomfortable in win...</div>
+                    <div class="their-name">VINCENT GOODWILL</div></div>
+                <div class="critic-pic"><img src="images/chris.webp" width="121px"></div>
+                <div class="what-they-said">
+                    <div class="quote">I not only <em>look</em> comfortable being uncomfortable, I <em>am</em>.</div>
+                    <div class="their-name">CHRIS HAYNES</div>
+                </div>
+                <div class="critic-pic"><img src="images/hannah.webp" width="121px"></div>
+                <div class="what-they-said">
+                    <div class="quote">MLB is already behind on pitchers using sticky substances.</div>
+                    <div class="their-name">HANNAH KEYSER</div>
+                </div>
             </div>
         </div>
 
         <div id="right-sidebar">
+            <p>Headlines</p>
+            <ul class="more-headlines">
 
+                <li >
+                    <div class="uptrend">&#8605;&nbsp;</div>
+                    <span ><a class="headline-small" href="#">Someone said something happened, but it might not have been that important.</a></span>
+                    <div class="age">10h</div>
+                </li>
+                <li>
+                    <div class="uptrend">&#8605;&nbsp;</div>
+                    <span><a class="headline-small" href="#">Did something happen? Oh well, it probably wasn't that important.</a></span>
+                    <div class="age">11h</div>
+                </li>
+                <li>
+                    <div class="uptrend">&#8605;&nbsp;</div>
+                    <span><a class="headline-small" href="#">Something may have happened, but we were away.</a></span>
+                    <div class="age">12h</div>
+                </li>
+                <li>
+                    <div class="uptrend">&#8605;&nbsp;</div>
+                    <span><a class="headline-small" href="#">Something happened, but, to be honest, it really wasn't that important.</a></span>
+                    <div class="age">13h</div>
+                </li>
+                <li>
+                    <div class="uptrend">&#8605;&nbsp;</div>
+                    <span><a class="headline-small" href="#">People watch others playing a game. Players gain $millions. Spectators lose time.</a></span>
+                    <div class="age">14h</div>
+                </li>
+            </ul>
+
+            <div class="more-adspace">
+                ANOTHER<br>
+                ADVERT<br>
+                HERE
+            </div>
         </div>
     </div>
 
