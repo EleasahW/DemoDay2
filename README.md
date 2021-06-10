@@ -21,6 +21,7 @@ Our team...
 - Created our own branches (e.g. feat/sports)
 - Made commits and created pull requests to share updates, and
 - Merged everything together
+- Deployed for presentation
 
 ### Tools:
 - PhpStorm IDE for production
