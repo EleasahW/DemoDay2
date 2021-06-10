@@ -224,7 +224,7 @@ nav a strong{
 
 .main-text a:hover{
     text-decoration: underline;
-    color: sl(0,0%,100%);
+    color: hsl(0,0%,100%);
 }
 
 /**secondary-main*/
@@ -241,11 +241,15 @@ nav a strong{
     line-height: 15.6px;
     color: hsl(0,0%,100%);
 }
-.secondary-main:hover, a:hover{
+.secondary-main img:hover{
     opacity: 0.9;
     color: hsl(212,100%,50%);
+    text-decoration: none;
+}
+.secondary-main a:hover{
+    color: hsl(212,100%,50%);
     text-decoration: underline;
-    text-decoration-color: hsl(212,100%,50%);
+    text-underline-color: hsl(212,100%,50%);
 }
 
 .secondary-main img{
@@ -259,6 +263,10 @@ nav a strong{
     height: 75px;
     width: 290px;
     margin-bottom: 0px;
+}
+
+#bkg a:hover{
+    opacity: 100%;
 }
 
 #right-text{
