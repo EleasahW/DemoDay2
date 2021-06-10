@@ -1,23 +1,30 @@
-# DemoDay2
-### @TODO: Eleasah
-- Create outline for index.css
-- Create outline for news.yahoo.html
-- Create outline for news.yahoo.css
-###@TODO: Group
-- Today: create :root in css - as a group(?)
+# Code9 Demo Day: 2
 
-### Responsibilities
-Amelia
-- news.yahoo.covid.html
-- news.yahoo.covid.css
+##Problem:
+- Create a replica of yahoo.com with HTML & CSS
 
-Casey
-- sports.yahoo.html
-- sports.yahoo.css
+## Solution:
 
-Eleasah
+### Method:
+
+- Last Monday: scoping
+- Created our own branches
+- Created pull requests when work needed to be shared
+- Overlapping sections were pulled from main branch to other branches (ex.)
+
+
+### Process:
+
+- PHP Storm
+- HTML + CSS
+- GitHub for collaboration
+- Vercel for publishing the final page
+### Results:
+
+#### Eleasah
+I completed the following pages:
+
 - index.html
 - index.css
 - news.yahoo.html
 - news.yahoo.css
-
