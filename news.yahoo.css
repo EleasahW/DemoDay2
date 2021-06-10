@@ -77,11 +77,6 @@ a{
     margin-right: 5px;
     padding-left: 15px;
 }
-/**width: 600px;
-    height: 40px;
-    border-radius: 5px 0px 0px 5px;
-    border-color: hsl(209,100%,55%);
-    border-width: 1px;*/
 
 .nav #search-news{
     border-radius: 2px;
@@ -122,7 +117,15 @@ a{
 }
 
 .right-nav{
-    /**flex contents evenly*/
+    display: flex;
+    flex-direction: row;
+    align-items: unsafe;
+}
+
+.right-nav img{
+    height: 25px;
+    width: 70px;
+    padding-top: 10px;
 }
 /**main navigation*/
 nav{
@@ -146,7 +149,6 @@ nav a:hover{
     text-decoration: underline 4px;
     text-decoration-color:  hsl(212,100%,50%);
     text-underline-offset: 10px;
-    /**space between txt decoration & text*/
 }
 
 nav a strong{
@@ -164,7 +166,7 @@ nav a strong{
     border-radius: 5px;
     border: 20px;
     margin-left: 90%;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 /**main*/
@@ -235,7 +237,7 @@ nav a strong{
 .secondary-main{
     display: flex;
     flex-direction:column;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-right: 10px;
     font-size: 12px;
     line-height: 15.6px;
@@ -244,7 +246,7 @@ nav a strong{
 .secondary-main img:hover{
     opacity: 0.9;
     color: hsl(212,100%,50%);
-    text-decoration: none;
+   text-decoration: none;
 }
 .secondary-main a:hover{
     color: hsl(212,100%,50%);
