@@ -8,6 +8,7 @@
 
 .all{
     margin-left: 15px;
+    margin-right: 15px;
 }
 
 a{
@@ -141,8 +142,9 @@ nav a:hover{
  */
 
 /**main*/
-.main{
-
+.central{
+    display: flex;
+    flex-direction: row;
 }
 
 .focus{
@@ -154,7 +156,7 @@ nav a:hover{
 }
 
 .focus img{
-    width: 500px;
+    width: 550px;
     height: 300px;
     border-radius: 2px 0px 0px 2px;
 }
@@ -163,9 +165,10 @@ nav a:hover{
     flex-direction: column;
     color: hsl(0,0%,100%);
     background-color: rgba(0,80,131,0.64);
-    height: inherit;
+    height: 300px;
     width: 350px;
     border-radius: 0px 2px 2px 0px;
+    margin-right: 40px;
 }
 
 .main-text h2{
@@ -191,4 +194,85 @@ nav a:hover{
 
 .main-text a:hover{
     text-decoration: underline;
+}
+
+/**right-hand graphic*/
+
+.right-figure{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0,0%,97%);
+    padding: 20px;
+}
+
+.right-figure a:hover{
+    text-decoration: none;
+    color: hsl(0,0%,0%);
+}
+.right-figure input{
+    border-radius: 20px;
+    color: hsl(0,0%,100%);
+    background-color: hsl(267,100%,48%);
+    border-color: hsl(267,100%,48%);
+    height: 30px;
+    width: 120px;
+    font-size: 12px;
+    line-height: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+
+.right-figure blockquote{
+    border-left: 10px;
+    border-color: #2d1152;
+
+    /**padding-left: 40px;*/
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.icons img{
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    opacity: 0.4;
+    margin-right: 5px;
+
+}
+
+.icons img[alt=MSNBC]{
+    height: 40px;
+    width: 40px;
+    opacity: 100%;
+}  
+
+/**secondary-main*/
+.bottom{
+    display: flex;
+    flex-direction: row;
+}
+.secondary-main{
+    display: flex;
+    flex-direction:column;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 12px;
+    line-height: 15.6px;
+    color: hsl(0,0%,100%);
+}
+.secondary-main:hover, a:hover{
+    opacity: 0.9;
+    color: hsl(212,100%,50%);
+    text-decoration: underline;
+    text-decoration-color: hsl(212,100%,50%);
+
+}
+
+
+.secondary-main img{
+    width: 175px;
+    height: 90px;
+    border-radius: 2px;
 }
