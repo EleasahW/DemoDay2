@@ -1,4 +1,4 @@
-# Code9 Demo Day: 2
+# Code9 Demo Day 2: Overview
 
 ##Problem:
 - Create a replica of yahoo.com with HTML & CSS
