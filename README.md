@@ -1,23 +1,45 @@
-# DemoDay2
-### @TODO: Eleasah
-- Create outline for index.css
-- Create outline for news.yahoo.html
-- Create outline for news.yahoo.css
-###@TODO: Group
-- Today: create :root in css - as a group(?)
+## "Problem"
 
-### Responsibilities
-Amelia
-- news.yahoo.covid.html
-- news.yahoo.covid.css
+Replicate the following web pages:
+- yahoo.com
+- news.yahoo.com 
+- sports.yahoo.com
+- news.yahoo.com/covid
 
-Casey
-- sports.yahoo.html
-- sports.yahoo.css
+Begin on 6/1 and deliver by 6/11
 
-Eleasah
+## Solution
+
+### Method:  
+We coded and debugged these pages individually with HTML + CSS and joined
+them together. Since the navigation and search bars are very similar from 
+page to page, these styles were put in a base CSS file.
+
+### Process:  scoping, branching, merging, and deploying
+Our team...
+- Divided work to be completed
+- Created our own branches (e.g. feat/sports)
+- Made commits and created pull requests to share updates, and
+- Merged everything together
+
+### Tools:
+- PhpStorm IDE for production
+- Responsively for inspection of dimensions, colors, etc.
+- GitHub for collaboration / version control
+- Vercel for publishing the final product
+
+### Results:
+Eleasah completed the following pages:  
 - index.html
 - index.css
 - news.yahoo.html
 - news.yahoo.css
 
+Casey took care of: 
+- sports.yahoo.html
+- sports.yahoo.css
+- nav.css
+
+And Amelia provided:
+- news.yahoo.covid.html
+- news.yahoo.covid.css
