@@ -106,18 +106,7 @@ a{
     color: hsl(0,0%,100%);
 }
 
-
-/**.nav input [type=submit]{
-    background-color: hsl(233,41%,36%);
-    color: hsl(240,100%,100%);
-}
-
-.nav div:nth-child(3) input{
-    background-color: hsl(212,100%,50%);
-    color: hsl(240,100%,100%);
-}*/
-
-/**navigation*/
+/**main navigation*/
 nav{
     font-size: 13px;
     display: flex;
@@ -147,12 +136,6 @@ nav a strong{
     text-decoration-color: hsl(212,100%,50%);
 }
 
-/**nav a div:first-child{
-    color: hsl(0,0%,0%);
-    text-decoration: underline 4px;
-    text-decoration-color:  hsl(212,100%,50%);
-}
- */
 
 /**ad*/
 .ad input{
@@ -165,9 +148,13 @@ nav a strong{
 }
 
 /**main*/
-.central{
+.main{
     display: flex;
     flex-direction: row;
+}
+.central{
+    display: flex;
+    flex-direction: column;
 }
 
 .focus{
@@ -218,6 +205,33 @@ nav a strong{
 .main-text a:hover{
     text-decoration: underline;
     color: sl(0,0%,100%);
+}
+
+/**secondary-main*/
+.bottom{
+    display: flex;
+    flex-direction: row;
+}
+.secondary-main{
+    display: flex;
+    flex-direction:column;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 12px;
+    line-height: 15.6px;
+    color: hsl(0,0%,100%);
+}
+.secondary-main:hover, a:hover{
+    opacity: 0.9;
+    color: hsl(212,100%,50%);
+    text-decoration: underline;
+    text-decoration-color: hsl(212,100%,50%);
+}
+
+.secondary-main img{
+    width: 170px;
+    height: 90px;
+    border-radius: 2px;
 }
 
 /**right-hand graphic*/
@@ -275,31 +289,4 @@ nav a strong{
     height: 40px;
     width: 40px;
     opacity: 100%;
-}  
-
-/**secondary-main*/
-.bottom{
-    display: flex;
-    flex-direction: row;
-}
-.secondary-main{
-    display: flex;
-    flex-direction:column;
-    margin-top: 15px;
-    margin-right: 10px;
-    font-size: 12px;
-    line-height: 15.6px;
-    color: hsl(0,0%,100%);
-}
-.secondary-main:hover, a:hover{
-    opacity: 0.9;
-    color: hsl(212,100%,50%);
-    text-decoration: underline;
-    text-decoration-color: hsl(212,100%,50%);
-}
-
-.secondary-main img{
-    width: 170px;
-    height: 90px;
-    border-radius: 2px;
 }
