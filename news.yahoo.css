@@ -145,12 +145,14 @@ nav a:hover{
     color: hsl(0,0%,0%);
     text-decoration: underline 4px;
     text-decoration-color:  hsl(212,100%,50%);
+    text-underline-offset: 10px;
     /**space between txt decoration & text*/
 }
 
 nav a strong{
     color: hsl(0,0%,0%);
     text-decoration: underline 4px;
+    text-underline-offset: 10px;
     text-decoration-color: hsl(212,100%,50%);
 }
 
