@@ -1,0 +1,542 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: yahoo-sans, Helvetica, sans-serif;
+}
+
+body {
+    /* NO HORIZ. SCROLLING
+    overflow-x: hidden;
+    */
+}
+
+.material-icons {
+    color: white;
+}
+
+.go-home {
+    margin: 1px 0 0 14px;
+}
+
+.center-y {
+     display: flex;
+     align-items: center;
+ }
+
+.no-underline,
+.no-underline:link,
+.no-underline:visited,
+.no-underline:hover,
+.no-underline:visited:hover {
+    text-decoration: none;  /* ok */
+}
+
+
+/* Begin Header containers */
+.purple-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 22px;
+    background-color: #2d1152;
+    font-size: 13px;.
+}
+
+.links {
+    display: flex;
+}
+
+.links a:link,
+.links a:visited,
+.links a:hover,
+.links a:visited:hover,
+.links a:focus {
+    color: white;
+}
+
+.purple-nav a:link {
+    display: flex;
+    flex-wrap: nowrap; /* ? */
+    padding: 1px 29px 0 4px;
+    color: white;      /* required in addition to "a:link { color: white }" above */
+}
+
+.bonus,
+.bonus:hover,
+.bonus:visited,
+.bonus:visited:hover,
+.bonus:focus {
+    color: white;
+}
+
+
+/* Search bar */
+.search-bar {
+    display: flex;
+
+    align-items: center;
+    width: 100vw;
+    height: 70px;
+    background: #1D2228;
+}
+
+.field-and-button {
+    display: flex;
+    height: 42px;
+    margin: 0 112px 0 52px;
+}
+
+.search-field {
+    width: 589px; /* final value ~589 */
+    height: 42px;
+    border: 1px solid #0081F2;
+    padding-left: 13px;
+}
+
+.search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 42px;
+    background-color: #0081F2;
+    color: white;
+}
+
+.search-button:hover,
+.search-button:visited,
+.search-button:active,
+.search-button:focus {
+    color: white;
+    text-decoration: none;
+}
+
+.smaller {
+    zoom: 70%;
+}
+
+.larger {
+    zoom: 120%;
+}
+
+.signin-mail {
+    display: flex;
+    align-items: center;
+    width: 173px;
+    height: 34px;
+    margin-left: 50px;
+    font-weight: 550;
+}
+
+.signin-mail a:link,
+.signin-mail a:visited,
+.signin-mail a:hover,
+.signin-mail a:visited:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.sign-in {
+    height: 26px;
+    width: 82px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-right: 20px;
+    background: transparent;
+    color: white;
+    text-align: center;
+}
+
+
+/* Second Navigation Bar */
+.second-nav {
+    width: 100vw;
+    height: 40px;
+    background: #232A31;
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories {
+    display: flex;
+    align-items: center;
+    width: 875px;
+    height: 100%;
+}
+.categories a:link,
+.categories a:visited,
+.categories a:hover,
+.categories a:visited:hover,
+.categories a:focus,
+.categories a:visited:focus {
+    padding-left: 20px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.categories a:last-of-type {
+    padding-right: 20px;
+}
+
+/* use JS to display the rest? */
+.remaining-cats {
+    display: none;
+}
+
+.my-teams {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 100%;
+    /*color: gold;*/
+    font-size: 8pt;
+    text-align: center;
+    line-height: 0.8;
+}
+.my-teams a:link,
+.my-teams a:hover,
+.my-teams a:visited,
+.my-teams a:visited:hover {
+    color: gold;
+    text-decoration: none;
+}
+
+.team-logo {
+    padding-right: 25px;
+}
+
+/* 4th and LAST Header Container */
+#teams-and-scores {
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 5px 8px hsl(0, 0%, 85%);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+#trending {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 145px;
+    height: 100%;
+    border-right: 1px solid #ccc;
+    font-size: 13px;
+}
+
+.sport-icon {  /* or icon */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 100%;
+    border-right: 1px solid #ccc;
+    color: #999;
+}
+
+.info-box {
+    width: 150px;
+    height: 100%;
+    border-right: 1px solid #ddd;
+}
+.info-box:link {
+    text-decoration: none;
+}
+
+.game-score {
+    width: 117px;
+    height: 84px;
+    margin: 8px 16px;
+    color: #1D2228;
+}
+.current-or-next {
+    width: 100%;
+    height: 36px;
+
+}
+
+.inn-qtr {
+    font-size: 12px;
+    color: red;
+}
+
+.game-time {
+    color: gray;
+    font-weight: 550;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 24px;
+}
+
+.scroll-arrows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 52px;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-top: none;
+    float: right;
+
+}
+.scroll-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+/* paid ad space */
+.advert  {
+    width: 90%;
+    max-width: 1000px;
+    height: 150px;
+    background-color: #ddd;
+    margin: 20px auto;
+}
+.close-box {
+    width: 85px;
+    height: 22px;
+    background-color: #bbb;
+    float: right;
+    border-bottom-left-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+/* how to accomplish this?
+.close-box:active {
+   .advert, .close-box {
+        display: none;
+    }
+}*/
+
+#below-ad {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+
+}
+
+#left-content {
+    /* responsive width/size */
+
+}
+
+#this-just-in {
+    display: flex;
+    width: 880px;
+    height: 72px;
+    border-radius: 10px;
+    margin-bottom: 9px;
+    box-shadow: 0 4px 6px hsl(0, 0%, 50%);
+
+}
+
+.side-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: white;
+}
+
+.breaking-news {
+    width: 193px;
+    padding-left: 35px;
+    background-color: hsl(350, 75%, 50%);
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.1
+}
+
+.small-image {
+    width: 136px;
+    background-color: #000;
+}
+
+.headline {
+    display: flex;
+    align-items: center;
+    width: 551px;
+    height: 100%;
+    background-color: #eee;
+    padding-left: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 16px;
+    font-weight: 550;
+    color: #232A31;
+}
+
+#main-story {
+
+}
+
+.photo-container {
+    width: 880px;
+    height: 370px;
+    display: flex;
+}
+
+.primary-photo {
+    width: 76.3%;  /* actual 680px? */
+    height: 100%;
+    border-right: 1px solid white;
+}
+
+.photo-trio {
+    width: 23.5%;  /* whatever's left from 880 */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-trio-item {
+    height: 116.3px;
+    border-left: 1px solid white;
+    margin-bottom: 2px;
+}
+
+.photo-trio-item:last-of-type {
+    border-bottom: none;
+}
+
+#scrolling-quotes {
+    display: flex;
+    width: 880px;
+    height: 121px;
+    border-radius: 10px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.line-up {
+    width: 75.5px;
+    padding: 0 15px;
+    background-color: #232A31;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 1.0
+}
+
+.yahoo-orange {
+    color: #FF520D;
+}
+
+.critic-pic {
+    width: 121px;
+    background-color: ghostwhite;
+}
+
+.what-they-said {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 169px;
+    padding: 10px 0px 10px 10px;
+    background-color: white;
+    color: #232A31;
+    font-size: 12px;
+}
+
+.quote {
+    width: 149px;
+    font-weight: 550;
+}
+
+.their-name {
+    font-weight: 800;
+}
+
+
+#right-sidebar {
+    width: 300px;
+    height: 600px;
+    margin-left: 25px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 900;
+    padding-bottom: 5px;
+
+}
+
+.more-headlines {
+    list-style: none;
+    width: 300px;
+
+    font-size: 12px;
+    color: #1D2228;
+}
+
+.more-headlines > li {
+    display: flex;
+    height: 42px;
+    padding: 5px 0;
+}
+
+.uptrend {
+    font-size: 20px;
+    font-weight: 600;
+    color: dodgerblue;
+    margin: -7px 0 -7px 0;
+
+}
+
+.more-headlines > li span {
+    width: 258.5px;
+    padding: 0 10px;
+
+}
+
+.headline-small,
+.headline-small:link {
+    color: #1D2228;
+    text-decoration: none;
+}
+
+.headline-small:hover,
+.headline-small:visited:hover {
+    color: dodgerblue;
+}
+
+.age {
+    font-size: 11px;
+    color: #aaa;
+}
+
+
+
+
+
+
+/* Responsive Styles? */
+@media only screen and (max-width: 450px) {
+    .top-nav {
+        display: none;
+    }
+
+    .search-bar {
+
+    }
+
+    .second-nav {
+
+    }
+
+}
