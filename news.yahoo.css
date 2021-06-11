@@ -130,6 +130,7 @@ nav{
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
+
 }
 
 nav:hover a{
@@ -137,6 +138,7 @@ nav:hover a{
 }
 
 nav a{
+
     padding-right: 30px;
     font-weight: bold;
 }

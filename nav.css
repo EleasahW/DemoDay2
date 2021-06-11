@@ -6,7 +6,6 @@
 }
 
 
-
 /* 1ST NAVIGATION BAR */
 .purple-nav {
     display: flex;
@@ -90,8 +89,6 @@
 }
 .search-button:hover { background: #0061D2; }
 
-.smaller { zoom: 70%; }
-.larger { zoom: 120%; }
 
 .signin-mail {
     display: flex;
