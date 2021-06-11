@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Yahoo Sports</title>
     <link rel="stylesheet" href="sports.yahoo.css">
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
@@ -17,14 +18,14 @@
     <div class="purple-nav">
         <div class="links">
             <i class="material-icons smaller go-home">home</i>
-            <a href="https://www.yahoo.com">Home</a>
+            <a href="index.html">Home</a>
             <a href="https://mail.yahoo.com">Mail</a>
-            <a href="https://news.yahoo.com">News</a>
-            <a href="#">Finance</a>
-            <a href="https://sports.yahoo.com">Sports</a>
-            <a href="#">Entertainment</a>
-            <a href="#">Search</a>
-            <a href="#">Mobile</a>
+            <a href="news.yahoo.html">News</a>
+            <a href="https://www.yahoo.com/finance">Finance</a>
+            <a href="sports.yahoo.html">Sports</a>
+            <a href="https://www.yahoo.com/">Entertainment</a>
+            <a href="https://www.yahoo.com">Search</a>
+            <a href="https://www.yahoo.com">Mobile</a>
             <a href="#">More</a>
         </div>
         <a class="bonus" href="https://sports.yahoo.com/dailyfantasy/">Join a Daily Fantasy contest today! &nbsp;<span style="font-size: 8px; margin-top:6px">&#10095;&#10095;</span></a>
@@ -32,29 +33,31 @@
 
     <div class="search-bar">
         <div><img src="images/yahoo-sports-logo.jpg" height="42px" alt="logo"/></div>
-        <div class="field-and-button">
-            <input type="text" name="search" class="search-field" placeholder="Search Players and Teams">
-            <a class="search-button" href="#"><i class="material-icons larger">search</i></a>
-        </div>
-        <div class="signin-mail">
-            <button class="sign-in">Sign in</button>
-            <a class="no-underline center-y" href="https://mail.yahoo.com/"><i class="material-icons">mail</i>&nbsp;Mail</a>
+        <div class="search-etc">
+            <div class="field-and-button">
+                <input type="text" name="search" class="search-field" placeholder="Search Players and Teams">
+                <a class="search-button" href="#"><i class="material-icons larger">search</i></a>
+            </div>
+            <div class="signin-mail">
+                <button class="sign-in">Sign in</button>
+                <a class="no-underline center-y" href="https://mail.yahoo.com/"><i class="material-icons">mail</i>&nbsp;Mail</a>
+            </div>
         </div>
     </div>
 
     <div class="second-nav">
         <div class="categories">
-            <a href="https://www.yahoo.com">SportsHome</a>
-            <a href="#">Fantasy</a>
-            <a href="#">NFL</a>
-            <a href="#">NBA</a>
-            <a href="#">MLB</a>
-            <a href="#">NHL</a>
-            <a href="#">NCAAF</a>
-            <a href="#">Soccer</a>
-            <a href="#">Golf</a>
-            <a href="#">Sportsbook</a>
-            <a href="#">MMA</a>
+            <a href="https://sports.yahoo.com">SportsHome</a>
+            <a href="https://sports.yahoo.com/fantasy/">Fantasy</a>
+            <a href="https://sports.yahoo.com/nfl/">NFL</a>
+            <a href="https://sports.yahoo.com/nba/">NBA</a>
+            <a href="https://sports.yahoo.com/mlb/">MLB</a>
+            <a href="https://sports.yahoo.com/nhl/">NHL</a>
+            <a href="https://sports.yahoo.com/college-football/">NCAAF</a>
+            <a href="https://sports.yahoo.com/soccer/">Soccer</a>
+            <a href="https://sports.yahoo.com/golf/">Golf</a>
+            <a href="https://sports.yahoo.com/sportsbook/">Sportsbook</a>
+            <a href="https://sports.yahoo.com/mma/">MMA</a>
             <a href="#">...</a>
             <div class="remaining-cats">
                 <a href="#">WNBA</a>
@@ -87,59 +90,59 @@
             <div class="team-logo"><img src="images/celtics.svg" height="31px" alt="celtics logo"></div>
             <div class="team-logo"><img src="images/redsox.svg" height="30px" alt="red sox logo"></div>
             <div class="team-logo"><img src="images/bruins.svg" height="30px" alt="bruins logo"></div>
-            <a href="#">+<br>EDIT</a>
+            <a href="https://login.yahoo.com/">+<br>EDIT</a>
         </div>
     </div>
 
     <div id="teams-and-scores">
-        <div id="trending">Trending<i class="glyphicon glyphicon-menu-down" style="color:red; font-size: 11px"></i></div>
+        <div id="trending">Trending<i class="glyphicon glyphicon-menu-down c-red fs-11"></i></div>
 
-        <div class="sport-icon"><i class='fas fa-baseball-ball' style='font-size:20px'></i>MLB</div>
+        <div class="sport-icon"><i class="fas fa-baseball-ball fs-20"></i>MLB</div>
         <a class="info-box" href="#">
             <div class="game-score">
                 <div class="current-or-next inn-qtr">Mid 2</div>
-                <div class="team"><span>T HOU</span> <span>1</span></div>
-                <div class="team"><span>T BOS</span> <span>2</span></div>
+                <div class="team"><span><img src="images/astros.svg" width="20px"/>&nbsp; &nbsp;HOU</span> <span>1</span></div>
+                <div class="team"><span><img src="images/redsox.svg" width="20px"/>&nbsp; &nbsp;BOS</span> <span>2</span></div>
             </div>
         </a>
 
         <a class="info-box" href="#">
             <div class="game-score">
                 <div class="current-or-next inn-qtr">Bot 1</div>
-                <div class="team"><span>T WAS</span> <span>2</span></div>
-                <div class="team"><span>T TB</span> <span>3</span></div>
+                <div class="team"><span><img src="images/nationals.svg" width="20px"/>&nbsp; &nbsp;WAS</span> <span>2</span></div>
+                <div class="team"><span><img src="images/rays.svg" width="20px"/>&nbsp; &nbsp;TB</span> <span>3</span></div>
             </div>
         </a>
 
         <a class="info-box" href="#">
             <div class="game-score">
                 <div class="current-or-next inn-qtr">Bot 2</div>
-                <div class="team"><span>T MIL</span> <span>1</span></div>
-                <div class="team"><span>T CIN</span> <span>2</span></div>
+                <div class="team"><span><img src="images/brewers.svg" width="20px"/>&nbsp; &nbsp;MIL</span> <span>1</span></div>
+                <div class="team"><span><img src="images/reds.svg" width="20px"/>&nbsp; &nbsp;CIN</span> <span>2</span></div>
             </div>
         </a>
 
         <a class="info-box" href="#">
             <div class="game-score">
                 <div class="current-or-next inn-qtr">Top 2</div>
-                <div class="team"><span>T ATL</span> <span>0</span></div>
-                <div class="team"><span>T PHI</span> <span>1</span></div>
+                <div class="team"><span><img src="images/braves.svg" height="10px"/>&nbsp; &nbsp;ATL</span> <span>0</span></div>
+                <div class="team"><span><img src="images/phillies.svg" width="20px"/>&nbsp; &nbsp; &nbsp;PHI</span> <span>1</span></div>
             </div>
         </a>
 
         <a class="info-box" href="#">
             <div class="game-score">
                 <div class="current-or-next inn-qtr">End 2</div>
-                <div class="team"><span>T NYM</span> <span>2</span></div>
-                <div class="team"><span>T BAL</span> <span>1</span></div>
+                <div class="team"><span><img src="images/mets.svg" width="20px"/>&nbsp; &nbsp;NYM</span> <span>2</span></div>
+                <div class="team"><span><img src="images/orioles.svg" width="20px"/>&nbsp; &nbsp;BAL</span> <span>1</span></div>
             </div>
         </a>
 
         <a class="info-box" href="#">
             <div class="game-score">
                 <div class="current-or-next inn-qtr">Bot 2</div>
-                <div class="team"><span>T SEA</span> <span>0</span></div>
-                <div class="team"><span>T DET</span> <span>0</span></div>
+                <div class="team"><span><img src="images/mariners.svg" width="20px"/>&nbsp; &nbsp;SEA</span> <span>0</span></div>
+                <div class="team"><span><img src="images/tigers.svg" height="20px"/>&nbsp; &nbsp; &nbsp;DET</span> <span>0</span></div>
             </div>
         </a>
 
@@ -147,14 +150,14 @@
         <a class="info-box" href="#">
             <div class="game-score">
                 <div class="current-or-next game-time">Sun 6:30 PM</div>
-                <div class="team"><span>T (3) DEN</span> <span>0-1</span></div>
-                <div class="team"><span>T (4) PHO</span> <span>1-0</span></div>
+                <div class="team"><span><img src="images/nuggets.svg" width="20px"/>&nbsp; &nbsp;(3) DEN</span> <span>0-1</span></div>
+                <div class="team"><span><img src="images/suns.svg" width="20px"/>&nbsp; &nbsp;(4) PHO</span> <span>1-0</span></div>
             </div>
         </a>
 
         <div class="scroll-arrows">
-            <div class="scroll-button">&gt;</div>
-            <div class="scroll-button">&lt;</div>
+            <div class="scroll-button"><i class="glyphicon glyphicon-menu-right c-red fs-14"></i></div>
+            <div class="scroll-button"><i class="glyphicon glyphicon-menu-left c-red fs-14"></i></div>
         </div>
     </div>
 
@@ -174,12 +177,29 @@
             <div id="main-story">
                 <div class="photo-container">
                     <a class="primary-photo" href="#">
-                        <img src="images/hawks-doing-well.jpg" width="100%" alt="photo of player"/>
+                        <div class="photo-text">
+                            <h2>Baiting Headline</h2>
+                            Brief story lead begging you to read more >>
+                        </div>
                     </a>
                     <div class="photo-trio">
-                        <a class="photo-trio-item" href="#"><img src="images/umpire.jpg" width="100%" alt="small photo1"></a>
-                        <a class="photo-trio-item" href="#"><img src="images/referee.jpg" width="100%" alt="small photo2"></a>
-                        <a class="photo-trio-item" href="#"><img src="images/that-arm-position-tho.jpg" width="100%" alt="small photo3"></a>
+                        <a class="photo-trio-item" href="#">
+                            <img src="images/umpire.jpg" width="100%" alt="behind ump">
+                        </a>
+                        <a class="photo-trio-item" href="#">
+                            <img src="images/referee.jpg" width="100%" alt="bimbo ref?">
+                        </a>
+                        <a class="photo-trio-item" href="#">
+                            <img src="images/that-arm-position-tho.jpg" width="100%" alt="the layup">
+                        </a>
+                        <div class="scroll-photos">
+                            <span>1-3 of 18</span>
+                            <span>
+                                <i class="glyphicon glyphicon-menu-up fs-14 c-gray"></i>
+                                &nbsp; &nbsp; &nbsp;
+                                <i class="glyphicon glyphicon-menu-down fs-14"></i>
+                            </span>
+                        </div>
                     </div>
                 </div>
 
@@ -189,19 +209,31 @@
                 <div class="side-heading line-up">THE<br>
                     <div class="yahoo-orange">LINE<br>UP</div>
                 </div>
-                <div class="critic-pic"><img src="images/vincent.webp" width="121px"></div>
+                <div class="critic-pic">
+                    <img src="images/vincent.webp" width="121px">
+                </div>
                 <div class="what-they-said">
                     <div class="quote">Without James Harden, the Nets looked comfortable being uncomfortable in win...</div>
-                    <div class="their-name">VINCENT GOODWILL</div></div>
-                <div class="critic-pic"><img src="images/chris.webp" width="121px"></div>
+                    <div class="their-name">VINCENT GOODWILL</div>
+                </div>
+                <div class="critic-pic">
+                    <img src="images/chris.webp" width="121px">
+                </div>
                 <div class="what-they-said">
                     <div class="quote">I not only <em>look</em> comfortable being uncomfortable, I <em>am</em>.</div>
                     <div class="their-name">CHRIS HAYNES</div>
                 </div>
-                <div class="critic-pic"><img src="images/hannah.webp" width="121px"></div>
+                <div class="critic-pic">
+                    <img src="images/hannah.webp" width="121px">
+                </div>
                 <div class="what-they-said">
                     <div class="quote">MLB is already behind on pitchers using sticky substances.</div>
                     <div class="their-name">HANNAH KEYSER</div>
+                </div>
+
+                <div class="scroll-arrows">
+                    <div class="scroll-button"><i class="glyphicon glyphicon-menu-right c-red fs-20"></i></div>
+                    <div class="scroll-button"><i class="glyphicon glyphicon-menu-left c-red fs-20"></i></div>
                 </div>
             </div>
         </div>
@@ -238,9 +270,9 @@
             </ul>
 
             <div class="more-adspace">
-                ANOTHER<br>
+                <strong>ANOTHER<br>
                 ADVERT<br>
-                HERE
+                HERE</strong>
             </div>
         </div>
     </div>

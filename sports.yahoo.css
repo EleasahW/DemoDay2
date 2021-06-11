@@ -1,44 +1,31 @@
-
 * {
     padding: 0;
     margin: 0;
     font-family: yahoo-sans, Helvetica, sans-serif;
+    text-decoration: none;
 }
 
 body {
-    /* NO HORIZ. SCROLLING
+    /* NO HORIZ. SCROLLING*/
     overflow-x: hidden;
-    */
 }
 
-.material-icons {
+a:link,
+a:hover,
+a:visited,
+a:visited:hover,
+a:focus,            /*?*/
+a:visited:focus {
     color: white;
-}
+    /*text-decoration: none;*/
+}  /* ok */
 
-.go-home {
-    margin: 1px 0 0 14px;
-}
-
-.center-y {
-     display: flex;
-     align-items: center;
- }
-
-.no-underline,
-.no-underline:link,
-.no-underline:visited,
-.no-underline:hover,
-.no-underline:visited:hover {
-    text-decoration: none;  /* ok */
-}
-
-
-/* Begin Header containers */
+/* 1ST NAVIGATION BAR */
 .purple-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 22px;
     background-color: #2d1152;
     font-size: 13px;.
@@ -48,51 +35,49 @@ body {
     display: flex;
 }
 
-.links a:link,
-.links a:visited,
-.links a:hover,
-.links a:visited:hover,
-.links a:focus {
-    color: white;
+.links a:hover {
+    text-decoration: underline;
 }
 
 .purple-nav a:link {
     display: flex;
     flex-wrap: nowrap; /* ? */
     padding: 1px 29px 0 4px;
-    color: white;      /* required in addition to "a:link { color: white }" above */
+    color: white;      /* believed to be required in addition to "a:link { color: white }" above */
 }
 
-.bonus,
-.bonus:hover,
-.bonus:visited,
-.bonus:visited:hover,
-.bonus:focus {
-    color: white;
-}
-
-
-/* Search bar */
+/* SEARCH BAR */
 .search-bar {
     display: flex;
-
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 70px;
     background: #1D2228;
+}
+
+.search-etc {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .field-and-button {
     display: flex;
     height: 42px;
-    margin: 0 112px 0 52px;
+    margin: 0 32px 0 52px;
 }
 
 .search-field {
+    min-width: 300px;
     width: 589px; /* final value ~589 */
+    max-width: 600px;
     height: 42px;
     border: 1px solid #0081F2;
     padding-left: 13px;
+}
+.search-field:focus {
+    outline: none;
+    box-shadow: 0 0 8px hsl(209,100%,55%);
 }
 
 .search-button {
@@ -105,37 +90,23 @@ body {
     color: white;
 }
 
+/* 3*/
 .search-button:hover,
 .search-button:visited,
 .search-button:active,
 .search-button:focus {
     color: white;
-    text-decoration: none;
+    text-decoration: none;  /* still required */
 }
-
-.smaller {
-    zoom: 70%;
-}
-
-.larger {
-    zoom: 120%;
-}
+.search-button:hover { background: #0061D2; }
 
 .signin-mail {
     display: flex;
     align-items: center;
     width: 173px;
     height: 34px;
-    margin-left: 50px;
+    margin-right: 20px;
     font-weight: 550;
-}
-
-.signin-mail a:link,
-.signin-mail a:visited,
-.signin-mail a:hover,
-.signin-mail a:visited:hover {
-    color: white;
-    text-decoration: none;
 }
 
 .sign-in {
@@ -152,7 +123,7 @@ body {
 
 /* Second Navigation Bar */
 .second-nav {
-    width: 100vw;
+    width: 100%;
     height: 40px;
     background: #232A31;
     display: flex;
@@ -165,19 +136,23 @@ body {
     width: 875px;
     height: 100%;
 }
-.categories a:link,
-.categories a:visited,
-.categories a:hover,
-.categories a:visited:hover,
-.categories a:focus,
-.categories a:visited:focus {
+.categories a:link
+ {
     padding-left: 20px;
     color: white;
     font-weight: 600;
-    text-decoration: none;
+    /*text-decoration: none;*/
 }
 
-.categories a:last-of-type {
+.categories a:hover {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 11px;
+}
+
+.categories a:last-of-type {    /* can remove if not displaying all categories */
     padding-right: 20px;
 }
 
@@ -196,12 +171,13 @@ body {
     text-align: center;
     line-height: 0.8;
 }
-.my-teams a:link,
+
+.my-teams a:link,               /* 6 */
 .my-teams a:hover,
 .my-teams a:visited,
 .my-teams a:visited:hover {
     color: gold;
-    text-decoration: none;
+    text-decoration: none;    /* still needed */
 }
 
 .team-logo {
@@ -211,10 +187,10 @@ body {
 /* 4th and LAST Header Container */
 #teams-and-scores {
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 100px;
     background-color: white;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ddd;
     box-shadow: 0 5px 8px hsl(0, 0%, 85%);
     font-size: 11px;
     font-weight: 600;
@@ -226,7 +202,7 @@ body {
     align-items: center;
     width: 145px;
     height: 100%;
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #ddd;
     font-size: 13px;
 }
 
@@ -237,17 +213,20 @@ body {
     align-items: center;
     width: 42px;
     height: 100%;
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #ddd;
     color: #999;
 }
 
 .info-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 150px;
     height: 100%;
     border-right: 1px solid #ddd;
 }
 .info-box:link {
-    text-decoration: none;
+    /*text-decoration: none;*/
 }
 
 .game-score {
@@ -283,12 +262,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 52px;
+    width: 48px;
     height: 100%;
-    border: 1px solid #ccc;
-    border-top: none;
+    border-right: 1px solid #ddd;
     float: right;
-
 }
 .scroll-button {
     display: flex;
@@ -296,7 +273,10 @@ body {
     align-items: center;
     width: 100%;
     height: 50%;
+    border-bottom: 1px solid #ddd;
 }
+.scroll-button:last-of-type { border: none; }
+
 
 /* paid ad space */
 .advert  {
@@ -325,15 +305,14 @@ body {
 #below-ad {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    width: 100%;
+    margin: 0 40px;
 
 }
 
-#left-content {
-    /* responsive width/size */
+#left-content {  /* responsive width/size? */  }
 
-}
-
+/* BREAKING NEWS */
 #this-just-in {
     display: flex;
     width: 880px;
@@ -382,39 +361,77 @@ body {
     color: #232A31;
 }
 
+/* STORY PHOTOS */
 #main-story {
-
+    padding-top: 5px;
 }
 
 .photo-container {
-    width: 880px;
-    height: 370px;
     display: flex;
+    justify-content: space-between;
+    width: 880px;
+    height: 377px;
 }
 
 .primary-photo {
-    width: 76.3%;  /* actual 680px? */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 671.5px;
     height: 100%;
-    border-right: 1px solid white;
+    background-image: url("images/hawks-doing-well.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+}
+.primary-photo:hover,
+.photo-trio-item:hover {
+    opacity: 95%;
+    color: white;
+    text-decoration: none;
+}
+
+.photo-text {
+    margin: 0 20px 40px 25px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.photo-container h2 {
+    font-size: 28px;
+    font-weight: 800;
 }
 
 .photo-trio {
-    width: 23.5%;  /* whatever's left from 880 */
-    height: 100%;
     display: flex;
     flex-direction: column;
+    width: 206.5px;
+    height: 100%;
+
 }
 
 .photo-trio-item {
-    height: 116.3px;
-    border-left: 1px solid white;
+    height: 117px;
     margin-bottom: 2px;
 }
 
-.photo-trio-item:last-of-type {
-    border-bottom: none;
+.photo-trio-item:hover {
+    opacity: 93%;
 }
 
+.scroll-photos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    background: black;
+    padding: 0 12px;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* THE LINE UP */
 #scrolling-quotes {
     display: flex;
     width: 880px;
@@ -422,6 +439,7 @@ body {
     border-radius: 10px;
     margin: 20px 0;
     overflow: hidden;
+    box-shadow: 0 -4px 5px hsl(0, 0%, 90%);
 }
 
 .line-up {
@@ -431,10 +449,6 @@ body {
     font-size: 16px;
     font-weight: 900;
     line-height: 1.0
-}
-
-.yahoo-orange {
-    color: #FF520D;
 }
 
 .critic-pic {
@@ -447,7 +461,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 169px;
-    padding: 10px 0px 10px 10px;
+    padding: 10px 0 10px 10px;
     background-color: white;
     color: #232A31;
     font-size: 12px;
@@ -466,7 +480,7 @@ body {
 #right-sidebar {
     width: 300px;
     height: 600px;
-    margin-left: 25px;
+    margin: 0 80px 0 20px;  /* 80 because it was off-screen for some reason */
 }
 
 p {
@@ -479,7 +493,6 @@ p {
 .more-headlines {
     list-style: none;
     width: 300px;
-
     font-size: 12px;
     color: #1D2228;
 }
@@ -501,16 +514,15 @@ p {
 .more-headlines > li span {
     width: 258.5px;
     padding: 0 10px;
-
 }
 
-.headline-small,
+a.headline-small,
 .headline-small:link {
     color: #1D2228;
     text-decoration: none;
 }
 
-.headline-small:hover,
+.headline-small:hover,          /* 7? */
 .headline-small:visited:hover {
     color: dodgerblue;
 }
@@ -520,9 +532,41 @@ p {
     color: #aaa;
 }
 
+.more-adspace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    border: 2px solid #232A31;
+    margin-top: 50px;
+    text-align: center;
+}
 
 
 
+
+.fs-11 { font-size: 11px; }
+.fs-14 { font-size: 14px; }
+.fs-20 { font-size: 20px; }
+.c-gray { color: gray; }
+.c-red { color: red; font-weight: 600; }
+.yahoo-orange { color: #FF520D; }
+.material-icons { color: white; }
+.go-home { margin: 1px 0 0 14px; }
+.smaller { zoom: 70%; }
+.larger { zoom: 120%; }
+.center-y {
+    display: flex;
+    align-items: center;
+}
+
+.no-underline,                 /*  8 */
+.no-underline:link,
+.no-underline:visited,
+.no-underline:hover,
+.no-underline:visited:hover {
+    text-decoration: none;
+}
 
 
 /* Responsive Styles? */
