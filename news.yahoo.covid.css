@@ -102,10 +102,15 @@ nav {
 
 }
 .mail{
+    position: relative;
     display: flex;
     color: #430297;
+
 }
 .mail a{
+    position: relative;
+    bottom: 11px;
+    left: 10px;
     margin-left: 5px;
     text-decoration: none;
     color: #232a31;
@@ -135,14 +140,30 @@ nav {
 .material-icons {
     cursor: pointer;
 }
-.body-content{
+.box{
+    position: relative;
+    left: 10px;
+}
 
-    display: flex;
+.img src{
+    position: relative;
+    left: 100px;
 }
-.body-content h3{
-    display: block;
-    font-size: 20px;
+.img-box{
+    position: relative;
+    left: 700px;
+    top: 25px;
 }
-/*.body-content ul{
-  align-self: flex-end;
+.content{
+    position: relative;
+    bottom: 325px;
+    width: 650px;
+}
+.content h3{
+    font-size: 32px;
+    color:#232a31
+}
+.content li{
+    font-size: 16px;
+    color: #585b5e;
 }
