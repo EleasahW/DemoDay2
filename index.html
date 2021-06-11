@@ -7,12 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Yahoo | Mail, Weather, Search, Politics, News, Finance, Sports, & More...</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <header class="head">
         <span>
-            <a href="index.html"><img src="https://s.yimg.com/rz/p/yahoo_homepage_en-US_s_f_p_bestfit_homepage_2x.png" alt="yahoo!"></a>        <form action="search">
+            <a href="index.html"><img src="https://s.yimg.com/rz/p/yahoo_homepage_en-US_s_f_p_bestfit_homepage_2x.png" alt="yahoo!"></a>
+            <form action="search"></form>
             <form>
                 <input type="search">
                 <a href="index.html"><i class=“material-icons” style="font-size: 18px">search</i></a>
@@ -20,11 +22,20 @@
             <!--sign in button-->
             <!--bell icon-->
             <!--mail icon-->
+            <div class="signin-notify-mail">
+                <button class="sign-in rounded">Sign in</button>
+                <a class="lighten" href="https://login.yahoo.com/">
+                    <img src="bell.png" alt="bell">
+                </a>
+                <a class="lighten" href="https://mail.yahoo.com/">
+                    <img src="open-env.png" alt="envelope">
+                </a>
+            </div>
         </span>
         <nav>
             <a href="yahoo.mail"><!--mail icon-->Mail</a>
             <a href="news.yahoo.covid.html">COVID-19</a>
-            <a href="news.yahoo.covid.html">News</a>
+            <a href="news.yahoo.html">News</a>
             <a href="yahoo.finance">Finance</a>
             <a href="sports.yahoo.html">Sports</a>
             <a href="yahoo.entertainment">Entertainment</a>
@@ -33,10 +44,11 @@
             <a href="yahoo.plus">Yahoo Plus</a>
             <a href="yahoo.more">More...</a>
         </nav>
-        <div class="ad">
-            <input type="reset" value="Show ad | +">
-        </div>
     </header>
+
+    <div class="ad">
+        <input type="reset" value="Show ad | +">
+    </div>
 
     <div class="main">
         <div class="focus">
