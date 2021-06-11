@@ -203,12 +203,10 @@ nav a{
     margin-left: 10px;
 }
 
-
 .focus a:hover{
     color:hsl(267,99%,41%);
     text-decoration: none;
 }
-
 
 .footer{
     display: flex;
@@ -233,4 +231,9 @@ nav a{
 .secondary-main a{
     font-size: 13px;
     width: 175px;
+}
+
+.secondary-main a:hover{
+    color: hsl(267,99%,41%);
+    text-decoration: none;
 }
