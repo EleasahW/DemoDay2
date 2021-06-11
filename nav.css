@@ -118,13 +118,41 @@
 .signin-notify-mail {
     display: flex;
     justify-content: space-between;
+    width: 228px;
+    margin-left: 75px;
 }
-.rounded {
-    border-radius: 50%;
+.bell {
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+    background-image: url("images/bell.jpg");
+    background-repeat: no-repeat;
+
 }
+.open-env {
+    width: 58px;
+    height: 25px;
+    background-size: 58px 25px;
+    background-image: url("images/open-env.jpg");
+    background-repeat: no-repeat;
+}
+.purple-rounded {
+    width: 68px;
+    border-color: hsl(267,99%,41%);
+    border-radius: 13px;
+    margin: 0;
+    color: hsl(267,99%,41%);
+    font-weight: 600;
+}
+.purple-rounded:hover {
+    background: hsl(267,99%,41%);
+    border-color: white;
+    color: white;
+}
+
 .lighten:hover,
 .lighten:visited:hover {
-    opacity: 85%;
+    opacity: 50%;
 }
 
 
@@ -167,3 +195,11 @@
 .go-home { margin: 1px 0 0 14px; }
 .smaller { zoom: 70%; }
 .larger { zoom: 120%; }
+
+.no-underline,
+.no-underline:link,
+.no-underline:visited,
+.no-underline:hover,
+.no-underline:visited:hover {
+    text-decoration: none;
+}
