@@ -119,7 +119,6 @@ a{
 .right-nav{
     display: flex;
     flex-direction: row;
-    align-items: unsafe;
 }
 
 .right-nav img{
@@ -135,13 +134,13 @@ nav{
     margin-bottom: 30px;
 }
 
-nav:hover a{
-    color: #9CA2A9;
-}
-
 nav a{
     padding-right: 30px;
     font-weight: bold;
+}
+
+nav:hover a{
+    color: #9CA2A9;
 }
 
 nav a:hover{
@@ -158,7 +157,9 @@ nav a strong{
     text-decoration-color: hsl(212,100%,50%);
 }
 
-
+nav p{
+    margin-left: 200px;
+}
 /**ad*/
 .ad input{
     width: 80px;
