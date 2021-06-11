@@ -158,6 +158,19 @@ nav a strong{
     text-decoration-color: hsl(212,100%,50%);
 }
 
+/*FOLLOW US*/
+.follow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+    margin-left: 140px;
+}
+.follow i {
+    font-size: 16px;
+    font-weight: 600;
+}
 
 /**ad*/
 .ad input{
