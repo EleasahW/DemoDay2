@@ -77,6 +77,11 @@ a{
     margin-right: 5px;
     padding-left: 15px;
 }
+/**width: 600px;
+    height: 40px;
+    border-radius: 5px 0px 0px 5px;
+    border-color: hsl(209,100%,55%);
+    border-width: 1px;*/
 
 .nav #search-news{
     border-radius: 2px;
@@ -117,14 +122,7 @@ a{
 }
 
 .right-nav{
-    display: flex;
-    flex-direction: row;
-}
-
-.right-nav img{
-    height: 25px;
-    width: 70px;
-    padding-top: 10px;
+    /**flex contents evenly*/
 }
 /**main navigation*/
 nav{
@@ -132,15 +130,17 @@ nav{
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
-}
 
-nav a{
-    padding-right: 30px;
-    font-weight: bold;
 }
 
 nav:hover a{
     color: #9CA2A9;
+}
+
+nav a{
+
+    padding-right: 30px;
+    font-weight: bold;
 }
 
 nav a:hover{
@@ -148,6 +148,7 @@ nav a:hover{
     text-decoration: underline 4px;
     text-decoration-color:  hsl(212,100%,50%);
     text-underline-offset: 10px;
+    /**space between txt decoration & text*/
 }
 
 nav a strong{
@@ -157,9 +158,20 @@ nav a strong{
     text-decoration-color: hsl(212,100%,50%);
 }
 
-nav p{
-    margin-left: 200px;
+/*FOLLOW US*/
+.follow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+    margin-left: 140px;
 }
+.follow i {
+    font-size: 16px;
+    font-weight: 600;
+}
+
 /**ad*/
 .ad input{
     width: 80px;
@@ -167,7 +179,7 @@ nav p{
     border-radius: 5px;
     border: 20px;
     margin-left: 90%;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 /**main*/
@@ -238,7 +250,7 @@ nav p{
 .secondary-main{
     display: flex;
     flex-direction:column;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-right: 10px;
     font-size: 12px;
     line-height: 15.6px;
@@ -247,7 +259,7 @@ nav p{
 .secondary-main img:hover{
     opacity: 0.9;
     color: hsl(212,100%,50%);
-   text-decoration: none;
+    text-decoration: none;
 }
 .secondary-main a:hover{
     color: hsl(212,100%,50%);

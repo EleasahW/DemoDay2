@@ -7,19 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Yahoo | Mail, Weather, Search, Politics, News, Finance, Sports, & More...</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <header class="head">
         <span>
-            <a href="index.html"><img src="https://s.yimg.com/rz/p/yahoo_homepage_en-US_s_f_p_bestfit_homepage_2x.png" alt="yahoo!"></a>        <form action="search">
+            <a href="index.html"><img src="https://s.yimg.com/rz/p/yahoo_homepage_en-US_s_f_p_bestfit_homepage_2x.png" alt="yahoo!"></a>
+            <form action="search"></form>
             <form>
-                <input type="search">
-                <a href="index.html"><i class=“material-icons” style="font-size: 18px">search</i></a>
+                <input type="search" style="padding-left: 13px">
+                <a class="search-button" style="text-decoration: none;" href="#">
+                    <i class="material-icons" style="font-size: 26px; padding: 0">search</i>
+                </a>
             </form>
             <!--sign in button-->
             <!--bell icon-->
             <!--mail icon-->
+            <div class="signin-notify-mail">
+                <button class="sign-in purple-rounded">Sign in</button>
+                <a class="bell lighten" href="https://login.yahoo.com/"></a>
+                <a class="open-env lighten" href="https://mail.yahoo.com/"></a>
+            </div>
         </span>
         <nav>
             <a href="yahoo.mail"><!--mail icon-->Mail</a>
@@ -33,10 +42,11 @@
             <a href="yahoo.plus">Yahoo Plus</a>
             <a href="yahoo.more">More...</a>
         </nav>
-        <div class="ad">
-            <input type="reset" value="Show ad | +">
-        </div>
     </header>
+
+    <div class="ad">
+        <input type="reset" value="Show ad | +">
+    </div>
 
     <div class="main">
         <div class="focus">
@@ -49,7 +59,7 @@
             </div>
             <div class="Trending">
                 <input type="submit" value="Make Yahoo your homepage">
-                <h2><a>Trending Now</a> <em>Father's Day</em></h2> <!--present box icon - red-->
+                <h2>Trending Now <a>Father's Day</a></h2> <!--present box icon - red-->
                 <ol>
                         <span>
                     <li><a href="#">Donald Trump</a></li>
